@@ -4,13 +4,19 @@ html(lang="ru")
         head
             meta(charset="utf-8")
             title Title your site
-            meta(content="width=device-width, initial-scale=1" name="viewport")
+            meta(name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width")
             meta(content="ie=edge" http-equiv="x-ua-compatible")
             link(rel="stylesheet" href="css/style.min.css")
+
     body
         block header
             include header
+
+        include ../includes/index/row-models.pug    
+        include ../includes/index/row-filters.pug    
+        include ../includes/index/card-mobilephone.pug
         block content
+
         block footer
             include footer
         block scripts

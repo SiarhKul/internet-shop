@@ -34,11 +34,13 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^5.0.0",
+    "file-exists": "^5.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-eslint": "^6.0.0",
     "gulp-html-bem-validator": "^1.0.5",
+    "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-npm-dist": "^1.0.3",
     "gulp-npm-files": "^0.1.3",
@@ -56,6 +58,8 @@
     "lighthouse": "^7.1.0",
     "node-sass": "^5.0.0",
     "open": "^7.4.1",
+    "pug-lint": "^2.6.0",
+    "pug-lint-config-clock": "^2.0.0",
     "stylelint": "^13.10.0",
     "stylelint-config-htmlacademy": "^0.1.4",
     "stylelint-config-standard": "^20.0.0",
@@ -64,8 +68,12 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "express": "^4.17.1",
     "jquery": "^3.5.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.0",
+    "slick-carousel": "^1.8.1"
   },
   "editorconfig-cli": [
     "*.json",

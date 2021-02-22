@@ -1,0 +1,99 @@
+.row-card {
+  .container {
+    width: 1860px;
+    margin: 0 auto;
+    display: flex;
+
+    .card-mobilephone {
+      .ticket-denefit {
+        display: flex;
+        .list-tickets {
+          padding: 10px;
+          border-radius: 5px;
+          background-color: $gray;
+          margin-right: 16px;
+          .ticket-param {
+            font-size: 14px;
+          }
+          .ticket-type {
+            color: $green;
+          }
+        }
+      }
+
+      .carousel {
+        .carousel-item {
+          flex: 1 1 300px;
+          img {
+          }
+        }
+      }
+
+      .production {
+        display: flex;
+        .production-name {
+          .name-mobilephone {
+            font-size: 25px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-right: 52px;
+          }
+          .color-mobilephone {
+            display: block;
+          }
+        }
+        .production-price {
+          .price {
+            display: flex;
+            vertical-align: top;
+            .current-price {
+              font-size: 40px;
+              line-height: 34px;
+            }
+            .price-by {
+              p {
+                &:first-child {
+                  font-weight: 500;
+                  line-height: 17px;
+                }
+              }
+            }
+          }
+          .prev-price {
+            line-height: 19px;
+            text-decoration-line: line-through;
+          }
+        }
+      }
+      .ticket-condition {
+        display: flex;
+        .list-condition {
+          padding: 10px;
+          background-color: $gray;
+          margin-right: 16px;
+          transition: all 0.2s ease-in;
+          &:hover {
+            background-color: $blue;
+            color: $white;
+          }
+          &:hover .condition-value {
+            color: $green;
+          }
+          .condition-valueByString {
+          }
+        }
+      }
+      .footer {
+        .userbar {
+        }
+        .detail {
+        }
+      }
+    }
+  }
+}
+.slick-slider {
+  width: 222px;
+  margin: 0 auto;
+}

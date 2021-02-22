@@ -1,23 +1,20 @@
-@import "../../local_modules/normalize.css/normalize";
-
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-img {
-    max-width: 100%;
+  font-weight: 300;
+  font-family: "Fira Sans", sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

@@ -1,26 +1,10 @@
 -var productionApple=[ 'Mac',"IPad","IPhone","Apple Watch","Распродажа"]       
 -var shopService =["О магазине", "Доставка и оплата", "Рассрочка","Контакты", "Гарантия"]
-header
-    .menu 
-        div.logo 
-            img(src="../../../img/header/logo.svg", alt="logo")
-        nav.nav-product-apple
-            ul 
-            each name in productionApple
-                li 
-                    a(href="#")= name 
-        nav.nav-shop-service 
-            ul 
-            each name in shopService
-                li
-                    a(href="#")=name 
-    .actions
-        .search 
-            img(src="../../../img/header/search.svg", alt="search")
-            span Поиск
-        .userbar 
-        img(src="../../../img/header/heart.svg", alt="heart")
-        img(src="../../../img/header/basket.svg", alt="basket")
-        img(src="../../../img/header/phone.svg", alt="phone")
 
+header
+    .container
+        .top-header
+            include ../includes/index/header-top.pug
+        .bottom-header  
+            include ../includes/index/header-bottom.pug            
 

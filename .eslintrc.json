@@ -1,25 +1,17 @@
 {
   "env": {
-    "browser": true,
-    "es6": true
+    "jquery": true
   },
-  "extends": [],
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "plugins": [
-    "import"
-  ],
-  "rules": {
-    "indent": "off",
-    "no-multi-spaces": "error",
-    "no-multiple-empty-lines": "error",
-    "no-unused-vars": "off",
-    "no-use-before-define": "error",
-    "no-var": "error",
-    "prefer-const": "error",
-    "semi": "error",
-    "space-in-parens": "error",
-    "unicorn/prevent-abbreviations": "off"
-  }
+  "overrides": [
+    {
+      "files": [ "src/**/*.js" ],
+      "extends": [ "airbnb-base" ],
+      "rules": {
+        "no-undef":"warn",
+        "semi": [ "error", "always" ]
+        // "indent": [ "error", 4 ],
+        // "quotes": [ "error", "semi" ]
+      }
+    }
+  ]
 }

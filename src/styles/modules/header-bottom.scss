@@ -1,0 +1,47 @@
+@mixin FontFira($white) {
+    font-weight: $white;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.list-pages {
+    ul {
+        display: flex;
+
+        li {
+            color: $white;
+            list-style-type: disc;
+
+            &:first-child {
+                list-style-type: none;
+            }
+
+            a {
+                color: $white;
+                padding-right: 35px;
+            }
+        }
+    }
+
+    h1 {
+
+        @include FontFira(700);
+
+        margin: 0;
+        padding-top: 7px;
+        color: $white;
+        font-style: normal;
+        font-size: 82px;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+}
+
+.img-box {
+    // width: 643px;
+    overflow: hidden;
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}

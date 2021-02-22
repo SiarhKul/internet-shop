@@ -1,10 +1,20 @@
-import $ from '../local_modules/jquery/dist/jquery.min';
+// import $ from '../local_modules/jquery/dist/jquery.min';
+// import '../local_modules/slick-carousel/slick/slick.min';
 
-$(document).ready(() => {
-    // eslint-disable-next-line no-console
-    console.log(`document ready`);
-})
+import $ from 'jquery';
+import 'slick-carousel';
 
-[1, 2, 3].map(num => num * 2);
+window.$ = window.jQuery = $;
 
-console.log("sdf");
+jQuery(() => {
+  console.log('document ready');
+  $('.carousel').slick({
+    dots: false,
+    infinite: true,
+    centerPadding: '50px',
+    // speed: 500,
+    // fade: true,
+    // cssEase: 'linear',
+    arrows: false,
+  });
+});

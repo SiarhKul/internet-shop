@@ -1,0 +1,27 @@
+-let filtersStandarts=["По популярности","По цене","По новизне", "По экономии"]
+
+.row-filter 
+  .container 
+    .filter 
+      .filter-custom 
+        svg(class="icon")
+          use(xlink:href="#filter")
+        span Фильтер  
+      .filter-standart 
+
+        ul
+          each val in filtersStandarts
+            li
+              //- <i class="fas fa-chevron-up"></i>
+              a=val
+
+
+
+<svg width="0" height="0" class="hidden">
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 22" id="filter">
+    <path  stroke-width=".5" d="M.25 2.25h19.5v.5H.25zm0 17h19.5v.5H.25zm0-9h14.5v.5H.25z"></path>
+    <circle cx="7.5" cy="10.5" r="2" ></circle>
+    <circle cx="17.5" cy="2.5" r="2"></circle>
+    <circle cx="17.5" cy="19.5" r="2" ></circle>
+  </symbol>
+</svg>

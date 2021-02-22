@@ -1,0 +1,19 @@
+-
+  let modelsIPhone =[ 
+    {name:'iPhone 12 Pro',urlFile:'../../../img/row-models/ct-tabs__item-1.png'}, 
+    {name:'iPhone 12',urlFile :'../../../img/row-models/ct-tabs__item-2.png'}, 
+    {name:'iPhone 11 Pro',urlFile :'../../../img/row-models/ct-tabs__item-3.png'}, 
+    {name:'iPhone 11 ',urlFile :'../../../img/row-models/ct-tabs__item-4.png'}, 
+    {name:'iPhone SE',urlFile :'../../../img/row-models/ct-tabs__item-5.png'}, 
+    {name:'iPhone XR',urlFile :'../../../img/row-models/ct-tabs__item-6.png'}, 
+    {name:'iPhone 8',urlFile :'../../../img/row-models/ct-tabs__item-7.png'}, 
+    {name:'Аксессуары',urlFile :'../../../img/row-models/ct-tabs__item-8.png'}, 
+      ]
+
+.row-models 
+  .container
+    ul.list-models
+      each model in modelsIPhone
+        li.model
+          img(class="model-img" src=model.urlFile, alt=model.name)
+          span(class="model-name")=model.name

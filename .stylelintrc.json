@@ -12,15 +12,15 @@
     "at-rule-no-vendor-prefix": true,
     "at-rule-empty-line-before": "always",
     "scss/selector-no-redundant-nesting-selector": true,
-    "scss/at-import-partial-extension": "never",
+    "scss/at-import-partial-extension": "always",
     "block-closing-brace-newline-before": "always",
     "block-closing-brace-newline-after": "always",
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
     "at-rule-semicolon-newline-after": "always",
     "at-rule-semicolon-space-before": "never",
-    "selector-max-class": 2,
-    "unit-whitelist": [
+    "selector-max-class": 20,
+    "unit-allowed-list": [
       "em",
       "rem",
       "%",

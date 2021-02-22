@@ -1,0 +1,36 @@
+-const listInfo =["О компании","Проверка техники","Гарантия","Доставка и оплата","Возврат и обмен","Вопросы и ответы","Контакты",]
+-
+  const listAddres=[
+    {nameBuild:"Build1",namePlace:"Place1",nameShop:"Shop1"},
+    {nameBuild:"Build2",namePlace:"Place2",nameShop:"Shop2"},
+  ]
+
+.row-footer-customer
+  .container 
+    .footer-customer 
+      .customer-info
+        h2 Информация
+        ul 
+          each info in listInfo 
+            li
+              a=info
+      .customer-addres 
+        each addres in listAddres
+          .addres
+            h2=addres.nameBuild 
+            p=addres.namePlace
+            p=addres.nameShop
+      .socials-media
+        .messenger
+          h2 Мессенджеры
+          p Вы можете написать нам в мессенджеры и соцсети в любое время.
+          .messenger-box
+            img(src="#", alt="#")
+            img(src="#", alt="#")
+            img(src="#", alt="#")
+            img(src="#", alt="#")
+            img(src="#", alt="#")
+            img(src="#", alt="#")
+        .socials 
+          h2 Социальные сети
+          .socials-box     

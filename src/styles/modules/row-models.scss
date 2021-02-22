@@ -1,0 +1,32 @@
+.row-models {
+    .container {
+        width: 1860px;
+        margin: 0 auto;
+
+        .list-models {
+            display: flex;
+
+            .model {
+                padding: 35px 0 27px 0;
+                list-style-type: none;
+                flex-grow: 1;
+                text-align: center;
+                transition: all 0.2s ease-in;
+                border: 1px solid $gray;
+
+                &:hover {
+                    background-color: $gray;
+                }
+
+                .model-img {
+                    margin: 0 auto;
+                    display: block;
+                }
+
+                .model-name {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

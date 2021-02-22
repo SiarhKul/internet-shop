@@ -1,5 +1,27 @@
-@import "common/global";
+@import "../../node_modules/normalize.css/normalize.css";
 
-@import "common/header";
+@import "../local_modules/slick-carousel/slick/slick.scss";
 
-@import "common/footer";
+@import "../styles/utils/fonts.scss";
+
+@import "../styles/utils/variables.scss";
+
+@import "common/global.scss";
+
+//header
+
+@import "common/header.scss";
+
+//content
+
+@import "./modules/row-models.scss";
+
+@import "./modules/row-filter.scss";
+
+@import "./modules/row-card.scss";
+
+//footer
+
+@import "./modules/row-footer-executer.scss";
+
+@import "common/footer.scss";
