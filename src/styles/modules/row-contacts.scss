@@ -1,0 +1,44 @@
+.row-contacts {
+  .container {
+    width: 1860px;
+    margin: 0 auto;
+
+    .contacts {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+
+      .constact-item {
+        padding: 40px 0;
+        text-align: center;
+        background-color: $gray;
+        transition: all 0.5s ease-out;
+        &:hover {
+          background-color: $blue;
+        }
+        &:hover .contact-text {
+          color: $white;
+        }
+        &:hover .path {
+          fill: none;
+          stroke: blue;
+        }
+        .contact-text {
+          margin: 0 auto;
+          width: 288px;
+          .contact-text-hightlit {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}
+// svg {
+//   symbol {
+//     path {
+//       fill: none;
+//       stroke: blue;
+//     }
+//   }
+// }
