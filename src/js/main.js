@@ -9,7 +9,7 @@ window.$ = window.jQuery = $;
 jQuery(() => {
   console.log('document ready');
   $('.carousel').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     centerPadding: '50px',
     // speed: 500,

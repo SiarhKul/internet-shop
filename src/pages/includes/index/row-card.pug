@@ -1,0 +1,50 @@
+include ../../includes/index/database/database.pug
+
+.row-card
+  .container 
+    each card in db 
+      .card-mobilephone 
+
+        .ticket-denefit 
+          each ticket in card.ticketsBenefit
+            ul 
+              li(class="list-tickets")
+                span(class="ticket-param")=ticket.param     
+                span(class="ticket-type")=ticket.type
+
+        .carousel
+            each img in card.carousel
+              .carousel-item
+                img(class="carousel-img" src=img, alt="img-carousel")
+
+        .production 
+          .production-name
+            span(class="name-mobilephone")=card.products.nameProduct
+            span(class="color-mobilephone")=card.products.color
+          
+          .production-price
+            .price
+              .current-price
+                span=card.products.price
+              .price-by
+                p 00
+                p BYN
+            .prev-price    
+              span=card.products.priceThrough
+
+        .ticket-condition 
+          each ticket in card.ticketCondition
+            ul 
+              li(class="list-condition") 
+                span(class="condition-value")=ticket.value 
+                span(class="condition-valueByString")=ticket.valueByString
+
+        .footer 
+          .userbar 
+            a(class="icon-heart" href="#") 
+              img(src="../../../img/header/heart.svg", alt="heart")
+            a(class="icon-basket" href="#") 
+              img(src="../../../img/header/basket.svg", alt="basket")
+          .detail
+            span Подробно
+            img(src="../../../img/card-mobilephone/arrow.svg", alt="arrow")
