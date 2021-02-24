@@ -1,36 +1,43 @@
 -const listInfo =["О компании","Проверка техники","Гарантия","Доставка и оплата","Возврат и обмен","Вопросы и ответы","Контакты",]
+
 -
   const listAddres=[
-    {nameBuild:"Build1",namePlace:"Place1",nameShop:"Shop1"},
-    {nameBuild:"Build2",namePlace:"Place2",nameShop:"Shop2"},
+    {nameBuild:"Галерея 'Элатио'",namePlace:"Минск, ул. Немига 12, 2 этаж Магазин CafeConnect",},
+    {nameBuild:"ТРЦ «Galleria Minsk»",namePlace:"Минск, пр-т. Победителей 9,4 этаж, магазин CafeConnect",},
   ]
+
+-
+  const sriteSocial=[ 
+    "img/sprite/footer-customer.svg#facebook", 
+    "img/sprite/footer-customer.svg#instagram", 
+    "img/sprite/footer-customer.svg#telegram",
+    "img/sprite/footer-customer.svg#vk", 
+    ]
 
 .row-footer-customer
   .container 
     .footer-customer 
       .customer-info
-        h2 Информация
+        h2.info-header Информация
         ul 
           each info in listInfo 
             li
               a=info
       .customer-addres 
+        h2.info-header Адреса
         each addres in listAddres
           .addres
-            h2=addres.nameBuild 
+            h4=addres.nameBuild 
             p=addres.namePlace
-            p=addres.nameShop
+
       .socials-media
         .messenger
-          h2 Мессенджеры
+          h2.info-header Мессенджеры
           p Вы можете написать нам в мессенджеры и соцсети в любое время.
           .messenger-box
-            img(src="#", alt="#")
-            img(src="#", alt="#")
-            img(src="#", alt="#")
-            img(src="#", alt="#")
-            img(src="#", alt="#")
-            img(src="#", alt="#")
+          each ico in sriteSocial
+            svg.icon
+              use(xlink:href=ico)
         .socials 
-          h2 Социальные сети
+          h2.info-header Социальные сети
           .socials-box     
