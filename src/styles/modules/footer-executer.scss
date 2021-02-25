@@ -1,0 +1,35 @@
+.row-footer-executer {
+  .container {
+    width: 1860px;
+    margin: 0 auto;
+
+    .footer-executer {
+      padding: 20px 160px;
+      background-color: $blue;
+      display: flex;
+      justify-content: space-between;
+      color: $white-transparent;
+      .executer-registration {
+        flex-basis: 384px;
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .executer-studio {
+        flex-basis: 295px;
+        p {
+          font-size: 14px;
+          span {
+            color: $white;
+          }
+        }
+      }
+
+      .executer-payment {
+        img {
+        }
+      }
+    }
+  }
+}

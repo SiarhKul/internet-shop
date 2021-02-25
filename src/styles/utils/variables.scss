@@ -6,7 +6,15 @@ $mediaWidthLaptop: 1366px;
 // переменные
 $black: #060528;
 $gray: #f3f3f3;
-$white: #ffffffff;
+$white: #fff;
+$white-transparent: rgba(255, 255, 255, 0.5);
 $blue: #1d0081;
 $green: #0fcf9c;
 $grey-dark: #bababa;
+// mixins
+@mixin info-header() {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}

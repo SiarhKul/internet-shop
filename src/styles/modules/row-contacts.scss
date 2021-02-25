@@ -19,9 +19,24 @@
         &:hover .contact-text {
           color: $white;
         }
-        &:hover .path {
-          fill: none;
-          stroke: blue;
+        &:hover .icon-phone {
+          stroke: $white;
+        }
+        &:hover .icon-email {
+          stroke: $white;
+        }
+        &:hover .icon-person {
+          stroke: $white;
+        }
+        .icon-phone,
+        .icon-email {
+          stroke: $blue;
+          stroke-width: 2;
+          width: 99px;
+        }
+        .icon-person {
+          stroke: $blue;
+          width: 99px;
         }
         .contact-text {
           margin: 0 auto;
@@ -34,11 +49,7 @@
     }
   }
 }
-// svg {
-//   symbol {
-//     path {
-//       fill: none;
-//       stroke: blue;
-//     }
-//   }
+
+// path {
+//   stroke: green;
 // }
