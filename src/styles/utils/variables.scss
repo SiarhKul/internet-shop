@@ -18,3 +18,7 @@ $grey-dark: #bababa;
   line-height: 48px;
   margin-bottom: 20px;
 }
+@mixin container() {
+  width: 1860px;
+  margin: 0 auto;
+}

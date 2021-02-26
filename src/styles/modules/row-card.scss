@@ -1,26 +1,12 @@
-// $slick-font-path: "./fonts/" !default;
-// $slick-font-family: "slick" !default;
-// $slick-loader-path: "./" !default;
-// $slick-arrow-color: white !default;
-// $slick-dot-color: black !default;
-// $slick-dot-color-active: $slick-dot-color !default;
-// $slick-prev-character: "\2190" !default;
-// $slick-next-character: "\2192" !default;
-// $slick-dot-character: "\2022" !default;
-// $slick-dot-size: 6px !default;
-// $slick-opacity-default: 0.75 !default;
-// $slick-opacity-on-hover: 1 !default;
-// $slick-opacity-not-active: 0.25 !default;
-
 .row-card {
   .container {
     width: 1860px;
     margin: 0 auto;
     display: flex;
-
+    flex-wrap: wrap;
     .card-mobilephone {
       border: 1px solid $gray;
-      flex-grow: 1;
+      flex-basis: 25%;
       padding: 55px 40px 30px 40px;
       .ticket-denefit {
         display: flex;
@@ -132,6 +118,55 @@
             text-transform: uppercase;
             margin-right: 20px;
             cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .more-card {
+      font-size: 30px;
+      padding: 80px 45px;
+      flex-basis: 25%;
+      background-color: $gray;
+      .more-card-border {
+        border-top: 1px solid $grey-dark;
+        border-bottom: 1px solid $grey-dark;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .box-center {
+          span {
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            vertical-align: bottom;
+          }
+          button {
+            font-size: 16px;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid $green;
+            color: $green;
+            background-color: transparent;
+            align-items: center;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.4s ease-out;
+            color: $green;
+            &:hover {
+              color: $blue;
+              border: 1px solid $blue;
+            }
+          }
+          p {
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 160%;
+            letter-spacing: 0.04em;
           }
         }
       }

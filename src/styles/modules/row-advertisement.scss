@@ -1,0 +1,50 @@
+.row-advertisement {
+  .container {
+    @include container();
+    .advertisement {
+      height: 233px;
+      background-color: $blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .adv-name {
+        margin-right: 65px;
+        h2 {
+          font-size: 80px;
+          line-height: 96px;
+          text-transform: uppercase;
+          color: $white;
+        }
+        span {
+          font-weight: 300;
+          font-size: 40px;
+          line-height: 48px;
+          text-transform: uppercase;
+          color: $green;
+        }
+      }
+      .adv-btn {
+        button {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          text-align: center;
+          vertical-align: middle;
+          border: 1px solid $white;
+          background-color: transparent;
+          color: $white;
+          align-items: center;
+          letter-spacing: 0.07em;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: all 0.4s ease-out;
+          &:hover {
+            color: $green;
+            border: 1px solid $green;
+          }
+        }
+      }
+    }
+  }
+}
