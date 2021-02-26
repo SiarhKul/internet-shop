@@ -5,12 +5,16 @@
     display: flex;
     flex-wrap: wrap;
     .card-mobilephone {
+      position: relative;
       border: 1px solid $gray;
       flex-basis: 25%;
       padding: 55px 40px 30px 40px;
+
       .ticket-denefit {
         display: flex;
         margin-bottom: 45px;
+        position: relative;
+        z-index: 0;
 
         .list-tickets {
           padding: 10px;
@@ -84,7 +88,7 @@
 
       .ticket-condition {
         display: flex;
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
         .list-condition {
           padding: 10px;
           background-color: $gray;
@@ -103,9 +107,17 @@
       }
 
       .footer {
+        padding: 30px 40px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: absolute;
+        z-index: 1000;
+        top: 654px;
+        left: 0;
+        background-color: #fff;
+        opacity: 0;
         .userbar {
           .icon-heart {
             margin-right: 20px;
@@ -118,8 +130,14 @@
             text-transform: uppercase;
             margin-right: 20px;
             cursor: pointer;
+            &:hover {
+              color: $blue;
+            }
           }
         }
+      }
+      .footer-show {
+        opacity: 1;
       }
     }
 
@@ -194,6 +212,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
+  opacity: 0;
   li {
     position: relative;
     display: inline-block;

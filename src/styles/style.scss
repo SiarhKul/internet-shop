@@ -10,7 +10,9 @@
 
 //header
 
-@import "common/header.scss";
+@import "../styles/modules/header-top.scss";
+
+@import "../styles/modules/header-bottom.scss";
 
 //content
 
