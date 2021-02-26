@@ -13,15 +13,13 @@ jQuery(() => {
   });
 });
 
-const cardMobilephone = document.querySelector('.card-mobilephone ');
+const footers = document.querySelectorAll('.footer');
+const carouselAll = document.querySelectorAll('.carousel');
 
-cardMobilephone.addEventListener('click', (e) => {
-  e.stopPropagation();
-  console.log(e.target.children[4]);
-});
-// cardMobilephone.addEventListener('click', (e) => {
-//   const footer = document.querySelector('.footer');
-//   footer.classList.toggle('footer-show');
-//   console.log(e.target);
-//   console.log(footer);
-// });
+carouselAll.forEach((carousel) => carousel.addEventListener('click', (e) => {
+  console.dir(e.target);
+  const { id } = e.target.dataset;
+  const arrFooters = [...footers];
+  const footer = arrFooters.filter((el) => el.dataset.id === id)[0];
+  footer.classList.toggle('footer-show');
+}));
