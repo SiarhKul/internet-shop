@@ -13,10 +13,26 @@ include ../../includes/index/database/database.pug
                   span(class="ticket-param")=ticket.param     
                   span(class="ticket-type")=ticket.type
 
+          //- .carousel
+          //-     each img in card.carousel
+          //-       .carousel-item
+          //-         img(class="carousel-img" src=img, data-id=card.id alt="img-carousel")
           .carousel
-              each img in card.carousel
-                .carousel-item
-                  img(class="carousel-img" src=img, data-id=card.id alt="img-carousel")
+            .viewport
+              a.next
+                span ❱
+              a.prev
+                span ❰
+              .slider(style="left: 0;")
+                each img in card.carousel
+                  .slider-item
+                    img(class="carousel-img" src=img, data-id=card.id alt="img-carousel")
+              .dots-box
+                .dot(style="border: 1px solid #0fcf9c;background: transparent")
+                .dot
+                .dot
+
+
 
           .production 
             .production-name

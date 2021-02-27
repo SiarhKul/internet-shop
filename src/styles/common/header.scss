@@ -1,0 +1,130 @@
+// @import "../mixins/media";
+
+@import "../modules/header-bottom.scss";
+
+@mixin FontFira($weight) {
+    font-weight: $weight;
+    font-family: "Fira Sans", sans-serif;
+}
+
+header {
+    .container {
+        width: 1860px;
+        margin: 0 auto;
+
+        .top-header {
+            background-color: $gray;
+
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                padding: 60px 110px 35px 110px;
+
+                .logo {
+                    width: 208px;
+                    height: 64px;
+
+                    img {
+                        position: relative;
+                        top: -34px;
+                        left: 0;
+                        display: block;
+                        max-width: 100%;
+                    }
+                }
+
+                .nav-product-apple {
+                    ul {
+                        display: flex;
+                        align-items: end;
+                        font-weight: bold;
+                        font-family: "Fira Sans", sans-serif;
+
+                        li {
+                            a {
+                                margin: 0 20px;
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+
+                .nav-shop-service {
+                    ul {
+                        display: flex;
+
+                        li {
+                            display: flex;
+
+                            a {
+                                color: $black;
+                                margin: 0 20px;
+
+                                @include FontFira(300);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .actions {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 110px 30px 110px;
+
+                .search {
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+
+                    label {
+                        svg {
+                            cursor: pointer;
+
+                            &:hover {
+                                fill: $white;
+                            }
+                        }
+                    }
+
+                    input {
+                        margin-left: 16px;
+                        background-color: transparent;
+                        border: none;
+                        padding: 8px 0 8px 20px;
+
+                        &:focus {
+                            outline: 0;
+                            outline-offset: 0;
+                            border-bottom: 3px solid $white;
+                        }
+                    }
+                }
+
+                .userbar {
+                    a {
+                        img {
+                            margin-right: 35px;
+                        }
+                    }
+
+                    svg {
+                        &:hover {
+                            fill: red;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-header {
+            padding: 55px 110px 0 100px;
+            background-color: $blue;
+            display: flex;
+            height: 228px;
+        }
+    }
+    // @include media-tablet {
+    //   width: 500px;
+    // }
+}
